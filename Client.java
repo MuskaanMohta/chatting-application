@@ -162,7 +162,7 @@ public class Client  implements ActionListener{
         new Client();
 
         try{
-            Socket s = new Socket("127.0.0.1",8000); //can be multiple sockets 128.0.0.1 -> local host and 8000 port no on which server is running
+            Socket s = new Socket("127.0.0.1",8000); //can be multiple sockets 127.0.0.1 -> local host and 8000 port no on which server is running
             DataInputStream din = new DataInputStream(s.getInputStream());
             dout = new DataOutputStream(s.getOutputStream());
 
